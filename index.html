@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Landuval</title>
+  </head>
+  <body>
+      <header class= "bg-dark text-dark text-center pt-3 pb-3 container-fluid">
+          <div class="row">
+              <div class= "col col-md col-lg text-align: center" >
+                <img src="img/restaurant.png" width=100px height=auto>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 text-align: center">
+                <nav>
+                    <a href="index.html">El Landuval</a>
+                </nav>
+
+              </div>
+          </div>
+      </header>
+      <main class= "container-fluid pt-5"> 
+          <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-header bg-primary text-dark">
+                          <span>Registro de menús</span>
+
+                      </div>
+                      <div class="card-body">
+                          <div class="mb-3">
+                              <label for="nombre-txt" class="form-label">Nombre cliente</label>
+                              <input type="text" class="form-control" id="nombre-txt" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="Horario-select" class="form-label">Horarios</label>
+                              <select class="form-select" id="Horario-select">
+
+                              </select>
+
+                          </div>
+                          <div class="mb-3">
+                              <label for="Valor-num">Valor</label>
+                              <input type="number" class="form-control" id="Valor-num">
+                          </div>
+                          <div class="mb-3">
+                              <label for="Descripcion-txt" class="form-label">Descripción</label>
+                              <textarea  id="Descripcion-txt" ></textarea>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card-footer">
+                      <div class="row">
+                          <div class="col-12">
+                              <button type="button" id="agregar-btn" class="btr btn-success">Agregar menú</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                  <div class="card">
+                      <div class="card-header bg-primary text-dark">
+                          <span>Lista de pedidos</span>
+                      </div>
+                      <div class="card-body">
+                          <table class="table table-bordered table-hover table-striped">
+                              <thead class="bg-primary text-dark" >
+                                  <tr>
+                                      <th>Nombre</th>
+                                      <th>Horario</th>
+                                      <th>Valor</th>
+                                      <th>Descripción</th>
+                                      <th>Oferta</th>
+                                  </tr>
+
+                              </thead>
+                              <tbody id="tabla-pedidos">
+
+                              </tbody>
+
+                          </table>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+      <footer>
+
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js" ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
